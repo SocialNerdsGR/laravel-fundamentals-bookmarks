@@ -1,0 +1,14 @@
+<?php
+
+/** @var \Illuminate\Database\Eloquent\Factory $factory */
+
+use App\Bookmark;
+use App\Model;
+use Faker\Generator as Faker;
+
+$factory->define(Bookmark::class, function (Faker $faker) {
+    return [
+        'title' => $faker->slug,
+        'url' => $faker->url
+    ];
+});
